@@ -1,2 +1,103 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>load和initialize | Kiwi</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">load和initialize</h1><a id="logo" href="/.">Kiwi</a><p class="description">志存高远，脚踏实地</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">load和initialize</h1><div class="post-meta">Sep 9, 2016</div><div class="post-content"><p>fgsdfgsfgsfgsd</p>
-</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2017/09/09/2017-09-24-Runloop结构/">Runloop结构</a><a class="next" href="/2016/09/09/2016-07-24-GCD实现多读单写/">GCD实现多读单写</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://zhangkiwi.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Objective-C/">Objective-C</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Xcode/">Xcode</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/工具/" style="font-size: 15px;">工具</a> <a href="/tags/内存/" style="font-size: 15px;">内存</a> <a href="/tags/多线程/" style="font-size: 15px;">多线程</a> <a href="/tags/block/" style="font-size: 15px;">block</a> <a href="/tags/Runtime/" style="font-size: 15px;">Runtime</a> <a href="/tags/Objective-C/" style="font-size: 15px;">Objective-C</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/09/2017-09-24-Runloop结构/">Runloop结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/09/2016-08-24-load和initialize/">load和initialize</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/09/2016-07-24-GCD实现多读单写/">GCD实现多读单写</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/24/2016-06-24/">KVO 原理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/20/2016-06-20-runtimezhi-guan-lian-dui-xiang/">Runtime之关联对象</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/13/2016-06-13-runtime/">Runtime基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/07/2016-06-07-shenkaobei/">深拷贝与浅拷贝</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/2016-05-26-block/">Block使用与注意</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/2016-05-24-duo-xian-cheng-zhi-gcd-er/">多线程之GCD(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/2016-05-19-at-duo-xian-cheng-zhi-gcd/">多线程之GCD（一）</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://southpeak.github.io/" title="南峰子的技术博客" target="_blank">南峰子的技术博客</a><ul></ul><a href="http://www.leichunfeng.com/blog/archives/" title="雷纯锋的技术博客" target="_blank">雷纯锋的技术博客</a><ul></ul><a href="http://www.iosxxx.com/archives/" title="向晨宇的技术博客" target="_blank">向晨宇的技术博客</a><ul></ul><a href="http://allluckly.cn/tags/index.html#%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%8C%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%EF%BC%8C%E7%A0%81%E5%86%9C%E4%BA%BA%E7%94%9F%EF%BC%8CiOS%E5%BC%80%E5%8F%91" title="iOS开发" target="_blank">iOS开发</a><ul></ul><a href="https://draveness.me/index" title="面向信仰编程" target="_blank">面向信仰编程</a><ul></ul><a href="http://www.beyondabel.com/blog/archives/" title="Abel's Den" target="_blank">Abel's Den</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Kiwi.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>+load和+initialize | Kiwi</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">+load和+initialize</h1><a id="logo" href="/.">Kiwi</a><p class="description">志存高远，脚踏实地</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">+load和+initialize</h1><div class="post-meta">Sep 9, 2016</div><div class="post-content"><p>NSObject 类中有两个非常特殊的类方法 +load 和 +initialize，这两个方法有让人困惑的地方。本文结合网上的一些结论从源码角度分析它们的区别和共同点。本文所使用的<a href="https://link.jianshu.com/?t=http://opensource.apple.com/tarballs/objc4/objc4-680.tar.gz" target="_blank" rel="noopener">源码</a>。</p>
+<h2 id="load"><a href="#load" class="headerlink" title="+load"></a>+load</h2><p>+load方法网上总结。</p>
+<ol>
+<li>每当将类或分类添加到Objective-C运行时时调用</li>
+<li>其父类方法的调用在子类之前</li>
+<li>分类方法的调用在本类之后</li>
+<li>如果两个库有依赖关系，则被依赖的库中的+load方法优先调用。</li>
+</ol>
+<p>下面从文档和源码角度给出解答。<br>第一条每当将类或分类添加到Objective-C运行时时调用，我们可以从<a href="https://developer.apple.com/documentation/objectivec/nsobject/1418815-load" target="_blank" rel="noopener">苹果</a>官方文档找出答案。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">load()</span><br><span class="line">Invoked whenever a class or category is added to the Objective-C runtime; </span><br><span class="line">implement this method to perform class-specific behavior upon loading.</span><br></pre></td></tr></table></figure>
+<p>文档中明确的说明了+load方法是在类或分类添加到Objective-C运行时时调用。</p>
+<p>然后第二条其父类方法的调用在子类之前。</p>
+<p>我们可在源码中探寻，先找到<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>void prepare_load_methods(const headerType *mhdr)<br>{<br>    size_t count, i;</p>
+<pre><code>runtimeLock.assertWriting();
+
+classref_t *classlist = 
+    _getObjc2NonlazyClassList(mhdr, &amp;count);
+for (i = 0; i &lt; count; i++) {
+    schedule_class_load(remapClass(classlist[i]));
+}
+
+category_t **categorylist = _getObjc2NonlazyCategoryList(mhdr, &amp;count);
+for (i = 0; i &lt; count; i++) {
+    category_t *cat = categorylist[i];
+    Class cls = remapClass(cat-&gt;cls);
+    if (!cls) continue;  // category for ignored weak-linked class
+    realizeClass(cls);
+    assert(cls-&gt;ISA()-&gt;isRealized());
+    add_category_to_loadable_list(cat);
+}
+</code></pre><p>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在这个方法中有一个```schedule_class_load```方法，我们继续往下查找，可以找到下面代码：</span><br></pre></td></tr></table></figure></p>
+<p>static void schedule_class_load(Class cls)<br>{<br>    if (!cls) return;<br>    assert(cls-&gt;isRealized());  // _read_images should realize</p>
+<pre><code>if (cls-&gt;data()-&gt;flags &amp; RW_LOADED) return;
+
+// Ensure superclass-first ordering
+schedule_class_load(cls-&gt;superclass);
+
+add_class_to_loadable_list(cls);
+cls-&gt;setInfo(RW_LOADED); 
+</code></pre><p>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">其源码注释中就已经写明确保父类在前，优先调用。```void prepare_load_methods(header_info *hi)``` 函数执行完后，当前所有满足 +load 方法调用条件的类和分类就被分别存放在全局变量 ```loadable_classes``` 和 ```loadable_categories``` 中。</span><br><span class="line"></span><br><span class="line">第三条分类方法的调用在本类之后。</span><br><span class="line"></span><br><span class="line">我们在源码中找到```call_load_methods```方法，找到如下代码:</span><br></pre></td></tr></table></figure></p>
+<p>void call_load_methods(void)<br>{<br>    static bool loading = NO;<br>    bool more_categories;</p>
+<pre><code>loadMethodLock.assertLocked();
+
+// Re-entrant calls do nothing; the outermost call will finish the job.
+if (loading) return;
+loading = YES;
+
+void *pool = objc_autoreleasePoolPush();
+
+do {
+    // 1. Repeatedly call class +loads until there aren&apos;t any more
+    while (loadable_classes_used &gt; 0) {
+        call_class_loads();
+    }
+
+    // 2. Call category +loads ONCE
+    more_categories = call_category_loads();
+
+    // 3. Run more +loads if there are classes OR more untried categories
+} while (loadable_classes_used &gt; 0  ||  more_categories);
+
+objc_autoreleasePoolPop(pool);
+
+loading = NO;
+</code></pre><p>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">在源码注释中说明，先加载class的+loads方法，然后再调用category的+loads方法。</span><br><span class="line"></span><br><span class="line">第四条暂时还没有找到文档和源码说明，等找到之后再加上。</span><br><span class="line">子类、父类和分类中的 +load 方法的实现是被区别对待的。就是说如果子类没有实现 +load 方法，那么当它被加载时 runtime 是不会去调用父类的 +load 方法的。同理，当一个类和它的分类都实现了 +load 方法时，两个方法都会被调用。因此，我们常常可以利用这个特性做方法混淆（Method Swizzling）。</span><br><span class="line"></span><br><span class="line">## +initialize</span><br><span class="line"></span><br><span class="line">1. +initialize 在收到第一条消息之前调用。</span><br><span class="line">2. 父类的调用在子类之前。</span><br><span class="line">3. 如果子类没有实现 +initialize 方法，那么继承自父类的实现会被调用；如果一个类的分类实现了 +initialize 方法，那么就会对这个类中的实现造成覆盖。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">第一条+initialize 在收到第一条消息之前调用，可以从[苹果官方](https://developer.apple.com/documentation/objectivec/nsobject/1418639-initialize)文档中找出答案。只说是收到第一条消息之前调用，消息包括实例方法和类方法的调用。 +initialize 方法是以懒加载的方式被调用的，如果程序一直没有给某个类或它的子类发送消息，那么这个类的 +initialize 方法是永远不会被调用的。这样可以节省系统资源，避免浪费。</span><br></pre></td></tr></table></figure></p>
+<p>initialize()<br>Initializes the class before it receives its first message.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">第二条父类的调用在子类之前，我们在源码中找到```_class_initialize```方法。找到如下代码：</span><br></pre></td></tr></table></figure>
+<p>void _class_initialize(Class cls)<br>{<br>    assert(!cls-&gt;isMetaClass());</p>
+<pre><code>Class supercls;
+BOOL reallyInitialize = NO;
+
+// Make sure super is done initializing BEFORE beginning to initialize cls.
+// See note about deadlock above.
+supercls = cls-&gt;superclass;
+if (supercls  &amp;&amp;  !supercls-&gt;isInitialized()) {
+    _class_initialize(supercls);
+}
+
+
+    ...
+
+
+   // Send the +initialize message.
+    // Note that +initialize is sent to the superclass (again) if 
+    // this class doesn&apos;t implement +initialize. 2157218
+    if (PrintInitializing) {
+        _objc_inform(&quot;INITIALIZE: calling +[%s initialize]&quot;,
+                     cls-&gt;nameForLogging());
+    }
+
+    ((void(*)(Class, SEL))objc_msgSend)(cls, SEL_initialize);
+
+    if (PrintInitializing) {
+        _objc_inform(&quot;INITIALIZE: finished +[%s initialize]&quot;,
+                     cls-&gt;nameForLogging());
+    }        
+
+
+  ...  
+</code></pre><p>   else {<br>        // We shouldn’t be here.<br>        _objc_fatal(“thread-safe class init in objc runtime is buggy!”);<br>    }<br>}<br><code>`</code><br>上面代码开始处的注释明确的说明了，父类的调用会在子类之前。</p>
+<p>第三条，我们在上面代码中发现有一个<code>objc_msgSend</code>方法，说明+initialize走的是一般消息发送流程，所以如果子类没有实现 +initialize 方法，那么继承自父类的实现会被调用；如果一个类的分类实现了 +initialize 方法，那么就会对这个类中的实现造成覆盖。</p>
+</div><div class="tags"><a href="/tags/Objective-C/">Objective-C</a></div><div class="post-nav"><a class="pre" href="/2017/09/09/2017-09-24-Runloop结构/">Runloop结构</a><a class="next" href="/2016/09/09/2016-07-24-GCD实现多读单写/">GCD实现多读单写</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://zhangkiwi.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Objective-C/">Objective-C</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Xcode/">Xcode</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/工具/" style="font-size: 15px;">工具</a> <a href="/tags/内存/" style="font-size: 15px;">内存</a> <a href="/tags/多线程/" style="font-size: 15px;">多线程</a> <a href="/tags/Runtime/" style="font-size: 15px;">Runtime</a> <a href="/tags/Objective-C/" style="font-size: 15px;">Objective-C</a> <a href="/tags/block/" style="font-size: 15px;">block</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/09/2017-09-24-Runloop结构/">Runloop结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/09/2016-08-24-load和initialize/">+load和+initialize</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/09/2016-07-24-GCD实现多读单写/">GCD实现多读单写</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/24/2016-06-24/">KVO 原理</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/20/2016-06-20-runtimezhi-guan-lian-dui-xiang/">Runtime之关联对象</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/13/2016-06-13-runtime/">Runtime基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/07/2016-06-07-shenkaobei/">深拷贝与浅拷贝</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/2016-05-26-block/">Block使用与注意</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/2016-05-24-duo-xian-cheng-zhi-gcd-er/">多线程之GCD(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/2016-05-19-at-duo-xian-cheng-zhi-gcd/">多线程之GCD（一）</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://southpeak.github.io/" title="南峰子的技术博客" target="_blank">南峰子的技术博客</a><ul></ul><a href="http://www.leichunfeng.com/blog/archives/" title="雷纯锋的技术博客" target="_blank">雷纯锋的技术博客</a><ul></ul><a href="http://www.iosxxx.com/archives/" title="向晨宇的技术博客" target="_blank">向晨宇的技术博客</a><ul></ul><a href="http://allluckly.cn/tags/index.html#%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%8C%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%EF%BC%8C%E7%A0%81%E5%86%9C%E4%BA%BA%E7%94%9F%EF%BC%8CiOS%E5%BC%80%E5%8F%91" title="iOS开发" target="_blank">iOS开发</a><ul></ul><a href="https://draveness.me/index" title="面向信仰编程" target="_blank">面向信仰编程</a><ul></ul><a href="http://www.beyondabel.com/blog/archives/" title="Abel's Den" target="_blank">Abel's Den</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Kiwi.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
